@@ -25,7 +25,7 @@ export const Footer = () => {
           </div>
 
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Built with <Heart className="w-4 h-4 text-primary" /> by Adnan Rasool
+            Built with clby Adnan Rasool
           </p>
 
           <p className="mono text-xs text-muted-foreground">© 2025</p>
