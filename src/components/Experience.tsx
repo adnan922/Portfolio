@@ -22,7 +22,7 @@ export const Experience = () => {
                   <p className="text-primary">ARS Portable Agnostic Solutions Pvt. Ltd.</p>
                 </div>
                 <span className="mono text-sm text-muted-foreground mt-2 md:mt-0">
-                  Jul 2025 – Jan 2026
+                  Jul 2025 – Present
                 </span>
               </div>
               <ul className="space-y-3 text-muted-foreground">
@@ -55,3 +55,4 @@ export const Experience = () => {
     </section>
   );
 };
+
