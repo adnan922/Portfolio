@@ -54,7 +54,7 @@ export const Hero = () => {
             variant="outline"
             className="rounded-full px-6 border-border hover:border-primary hover:text-primary"
           >
-            <a href="/Resume.pdf" download>
+            <a href="/CV.pdf" download>
               Download CV
             </a>
           </Button>
@@ -85,3 +85,4 @@ export const Hero = () => {
     </section>
   );
 };
+
