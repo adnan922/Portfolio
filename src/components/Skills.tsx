@@ -1,10 +1,10 @@
 const skillCategories = [
   {
     title: "Programming",
-    skills: ["Python"],
+    skills: ["Python", "TypeScript"],
   },
   {
-    title: "AI & Machine Learning",
+    title: "AI / ML",
     skills: [
       "Machine Learning",
       "Deep Learning",
@@ -16,12 +16,16 @@ const skillCategories = [
     ],
   },
   {
-    title: "Cloud & Tools",
-    skills: ["Azure AI Services", "Azure OpenAI", "Azure Cognitive Search"],
+    title: "Web Dev",
+    skills: ["Next.js", "React", "Streamlit","Node.js"],
   },
   {
-    title: "Frameworks & Libraries",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Streamlit", "LangChain"],
+    title: "Cloud & Tools",
+    skills: ["Azure AI Services", "Azure OpenAI", "Azure Cognitive Search", "Vercel"],
+  },
+  {
+    title: "Frameworks",
+    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "LangChain"],
   },
   {
     title: "Specializations",
@@ -42,7 +46,7 @@ export const Skills = () => {
       </div>
 
       <div className="max-w-4xl mx-auto grid gap-6">
-        {skillCategories.map((category, index) => (
+        {skillCategories.map((category) => (
           <div key={category.title} className="card-glass rounded-xl p-6">
             <h3 className="font-semibold text-primary mb-4">{category.title}</h3>
             <div className="flex flex-wrap gap-2">

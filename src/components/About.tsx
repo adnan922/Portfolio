@@ -4,22 +4,22 @@ const highlights = [
   {
     icon: Brain,
     title: "AI & Machine Learning",
-    description: "Deep expertise in ML, DL, and LLM applications",
+    description: "Expertise in ML, deep learning, and LLM applications",
   },
   {
     icon: Sparkles,
     title: "RAG Systems",
-    description: "Building production-ready retrieval augmented generation",
+    description: "Building production-ready retrieval augmented generation and semantic search",
   },
   {
     icon: Cloud,
     title: "Azure AI Services",
-    description: "Leveraging cloud AI for scalable solutions",
+    description: "Leveraging cloud AI and the OpenAI API for scalable solutions",
   },
   {
     icon: Code2,
-    title: "Python Expert",
-    description: "Strong foundation in practical AI implementations",
+    title: "Full-Stack Dev",
+    description: "Skilled in web development with Next.js and TypeScript",
   },
 ];
 
@@ -34,16 +34,10 @@ export const About = () => {
           </h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I'm an AI/ML Engineer with hands-on experience building and managing
-              production RAG systems using Azure AI Services and OpenAI API. My expertise
-              spans machine learning, deep learning, LLM applications, prompt engineering,
-              and retrieval pipeline optimization.
+              I'm an AI/ML Engineer with hands-on experience building production RAG systems using Azure AI Services and the OpenAI API. My expertise spans machine learning, deep learning, LLM applications, prompt engineering, and retrieval pipeline optimization.
             </p>
             <p>
-              With a strong foundation in Python and a passion for deploying practical
-              AI solutions, I focus on bridging the gap between cutting-edge research
-              and real-world applications. I thrive on solving complex problems and
-              creating systems that make AI accessible and useful.
+              Beyond my core focus in artificial intelligence, I am also highly skilled in full-stack web development with Next.js and TypeScript. This dual expertise allows me to bridge the gap between cutting-edge AI backend systems and responsive, user-friendly frontend interfaces, delivering complete, end-to-end intelligent solutions.
             </p>
           </div>
         </div>

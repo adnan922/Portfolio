@@ -3,10 +3,19 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "VideoQueryAI",
-    subtitle: "Interactive Video Understanding System",
+    title: "Holiday Heed",
+    subtitle: "Kashmir Tour Packages Website",
     description:
-      "Built an interactive video understanding system enabling natural-language queries over video frames using Qwen2-VL-2B-Instruct. Implemented frame extraction, temporal reasoning, and question-answering for educational use cases.",
+      "Built a full-stack travel agency website using Next.js and TypeScript featuring dynamic tour package listings, a seasonal travel guide, and an inquiry/quote form for customer lead generation. Deployed on Vercel with 13+ production deployments; implemented responsive UI with CSS and integrated SpeedInsights for performance monitoring.",
+    tags: ["Next.js", "TypeScript", "Vercel", "CSS"],
+    link: "https://holiday-heed.vercel.app",
+    featured: true,
+  },
+  {
+    title: "VideoQuery AI",
+    subtitle: "Interactive Video Questioning Using Qwen2-VL-2B",
+    description:
+      "Built an interactive video understanding system enabling natural-language queries over video frames using Qwen2-VL-2B-Instruct with frame extraction, temporal reasoning, and Q&A for educational use cases.",
     tags: ["Qwen2-VL", "Video AI", "NLP", "Deep Learning", "Python"],
     github: "https://github.com/adnan922",
     featured: true,
@@ -21,7 +30,7 @@ export const Projects = () => {
         <h2 className="text-3xl md:text-4xl font-bold">Things I've Built</h2>
       </div>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto flex flex-col gap-8">
         {projects.map((project, index) => (
           <div
             key={project.title}
@@ -53,21 +62,40 @@ export const Projects = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <Button
-                  asChild
-                  variant="ghost"
-                  size="sm"
-                  className="hover:text-primary gap-2"
-                >
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                {project.github && (
+                  <Button
+                    asChild
+                    variant="ghost"
+                    size="sm"
+                    className="hover:text-primary gap-2"
                   >
-                    <Github className="w-4 h-4" />
-                    View Code
-                  </a>
-                </Button>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="w-4 h-4" />
+                      View Code
+                    </a>
+                  </Button>
+                )}
+                {project.link && (
+                  <Button
+                    asChild
+                    variant="ghost"
+                    size="sm"
+                    className="hover:text-primary gap-2"
+                  >
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Live Demo
+                    </a>
+                  </Button>
+                )}
               </div>
             </div>
           </div>
