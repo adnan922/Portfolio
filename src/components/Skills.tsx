@@ -1,32 +1,49 @@
 const skillCategories = [
   {
-    title: "Programming",
-    skills: ["Python"],
+    title: "Languages",
+    skills: ["Python", "TypeScript", "JavaScript"],
   },
   {
-    title: "AI & Machine Learning",
+    title: "Backend",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "Prisma ORM",
+      "PostgreSQL",
+      "JWT",
+      "REST APIs",
+      "Postman",
+    ],
+  },
+  {
+    title: "AI / ML",
     skills: [
       "Machine Learning",
       "Deep Learning",
-      "RAG Systems",
+      "RAG",
       "LLMs",
       "NLP",
       "Computer Vision",
       "Prompt Engineering",
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "LangChain",
     ],
   },
   {
+    title: "Frontend",
+    skills: ["Next.js", "React", "Streamlit"],
+  },
+  {
     title: "Cloud & Tools",
-    skills: ["Azure AI Services", "Azure OpenAI", "Azure Cognitive Search"],
-  },
-  {
-    title: "Frameworks & Libraries",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Streamlit", "LangChain"],
-  },
-  {
-    title: "Specializations",
     skills: [
-      "Retrieval Augmented Generation",
+      "Azure AI Services",
+      "Azure OpenAI",
+      "Azure Cognitive Search",
+      "Vercel",
+      "Git",
+      "Docker",
       "Vector Embeddings",
       "Semantic Search",
     ],
@@ -41,9 +58,9 @@ export const Skills = () => {
         <h2 className="text-3xl md:text-4xl font-bold">Technologies I Work With</h2>
       </div>
 
-      <div className="max-w-4xl mx-auto grid gap-6">
-        {skillCategories.map((category, index) => (
-          <div key={category.title} className="card-glass rounded-xl p-6">
+      <div className="max-w-4xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {skillCategories.map((category) => (
+          <div key={category.title} className="card-glass rounded-xl p-6 h-full">
             <h3 className="font-semibold text-primary mb-4">{category.title}</h3>
             <div className="flex flex-wrap gap-2">
               {category.skills.map((skill) => (

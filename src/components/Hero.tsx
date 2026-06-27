@@ -30,16 +30,26 @@ export const Hero = () => {
         </h2>
 
         <p className="max-w-xl mx-auto text-muted-foreground mb-8 animate-fade-up-delay-3 leading-relaxed">
-          Specializing in production RAG systems, Azure AI Services, and LLM applications.
-          Building intelligent solutions that bridge the gap between cutting-edge AI and
-          real-world applications.
+          AI/ML Engineer with hands-on experience building production RAG systems using Azure AI Services and OpenAI API. Expertise in machine learning, deep learning, LLM applications, prompt engineering, and retrieval pipeline optimization.
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-8 text-sm text-muted-foreground animate-fade-up-delay-3">
+        <div className="flex flex-wrap items-center justify-center gap-6 mb-8 text-sm text-muted-foreground animate-fade-up-delay-3">
           <span className="flex items-center gap-1.5">
             <MapPin className="w-4 h-4 text-primary" />
             Model Town, Sopore, India
           </span>
+          <span className="flex items-center gap-1.5">
+            <Mail className="w-4 h-4 text-primary" />
+            <a href="mailto:sofiadnan92@gmail.com" className="hover:text-primary transition-colors">
+              sofiadnan92@gmail.com
+            </a>
+          </span>
+          {/* <span className="flex items-center gap-1.5">
+            <Phone className="w-4 h-4 text-primary" />
+            <a href="tel:+916006910879" className="hover:text-primary transition-colors">
+              +91 6006910879
+            </a>
+          </span> */}
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-up-delay-3">
@@ -54,7 +64,7 @@ export const Hero = () => {
             variant="outline"
             className="rounded-full px-6 border-border hover:border-primary hover:text-primary"
           >
-            <a href="/CV.pdf" download>
+            <a href="/Resume.pdf" download="Adnan Resume.pdf">
               Download CV
             </a>
           </Button>
@@ -85,4 +95,3 @@ export const Hero = () => {
     </section>
   );
 };
-
