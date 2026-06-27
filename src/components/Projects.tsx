@@ -1,24 +1,42 @@
-import { ExternalLink, Github, Play } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Holiday Heed",
-    subtitle: "Kashmir Tour Packages Website",
+    title: "Coaching Kart Backend",
+    subtitle: "Multi-Institution Coaching Management Platform",
     description:
-      "Built a full-stack travel agency website using Next.js and TypeScript featuring dynamic tour package listings, a seasonal travel guide, and an inquiry/quote form for customer lead generation. Deployed on Vercel with 13+ production deployments; implemented responsive UI with CSS and integrated SpeedInsights for performance monitoring.",
-    tags: ["Next.js", "TypeScript", "Vercel", "CSS"],
-    link: "https://holiday-heed.vercel.app",
+      "Built and extended the backend for a coaching management platform, implementing RESTful APIs across 10+ modules including students, batches, and courses. Designed an RBAC system spanning platform and institution contexts, JWT-based single-session enforcement, and automated enrollment expiry via middleware. Conducted comprehensive API testing using Postman.",
+    tags: ["Node.js", "Express", "Prisma ORM", "PostgreSQL", "JWT"],
+    link: "https://coachingkart.in",
     featured: true,
   },
   {
-    title: "VideoQuery AI",
-    subtitle: "Interactive Video Questioning Using Qwen2-VL-2B",
+    title: "Shaheen Dev Portfolio",
+    subtitle: "Production Portfolio Site",
     description:
-      "Built an interactive video understanding system enabling natural-language queries over video frames using Qwen2-VL-2B-Instruct with frame extraction, temporal reasoning, and Q&A for educational use cases.",
-    tags: ["Qwen2-VL", "Video AI", "NLP", "Deep Learning", "Python"],
-    github: "https://github.com/adnan922",
+      "Contributed to the production portfolio site for Shaheen Developers. Built and integrated the Career page API with résumé upload using multer and Gmail attachment delivery, and completed the Contact form API. Maintained 45+ production deployments across channels and integrated Vercel Speed Insights.",
+    tags: ["TypeScript", "Vite", "Express", "Vercel"],
+    link: "https://shaheendevelopers.in",
     featured: true,
+  },
+  {
+    title: "Holiday Heed",
+    subtitle: "Kashmir Tour Packages Website",
+    description:
+      "Built a full-stack travel agency website using Next.js and TypeScript featuring dynamic tour package listings, a seasonal travel guide, and a customer inquiry form. Deployed on Vercel with 13+ production deployments, a responsive UI, and integrated SpeedInsights for performance monitoring.",
+    tags: ["Next.js", "TypeScript", "Vercel"],
+    link: "https://holidayheedkashmir.in",
+    featured: false,
+  },
+  {
+    title: "VideoQuery AI",
+    subtitle: "Interactive Video Questioning",
+    description:
+      "Built an interactive video understanding system enabling natural-language queries over video frames using a self-hosted Qwen2-VL-7B-Instruct model with frame extraction, temporal reasoning, and Q&A for educational use cases.",
+    tags: ["Qwen2-VL-7B", "Python", "Deep Learning", "NLP", "Video AI"],
+    github: "https://github.com/adnan922",
+    featured: false,
   },
 ];
 

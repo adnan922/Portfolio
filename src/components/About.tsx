@@ -1,25 +1,25 @@
-import { Brain, Cloud, Code2, Sparkles } from "lucide-react";
+import { Brain, Cloud, Code2, Server } from "lucide-react";
 
 const highlights = [
   {
     icon: Brain,
     title: "AI & Machine Learning",
-    description: "Expertise in ML, deep learning, and LLM applications",
+    description: "Expertise in ML, deep learning, RAG systems, and LLM applications",
   },
   {
-    icon: Sparkles,
-    title: "RAG Systems",
-    description: "Building production-ready retrieval augmented generation and semantic search",
+    icon: Server,
+    title: "Backend Development",
+    description: "Designing RESTful APIs with Node.js, Express.js, Prisma, and PostgreSQL",
   },
   {
     icon: Cloud,
-    title: "Azure AI Services",
-    description: "Leveraging cloud AI and the OpenAI API for scalable solutions",
+    title: "Cloud & AI Services",
+    description: "Deploying scalable solutions using Azure AI, OpenAI, and vector search",
   },
   {
     icon: Code2,
-    title: "Full-Stack Dev",
-    description: "Skilled in web development with Next.js and TypeScript",
+    title: "Frontend & Full-Stack",
+    description: "Building responsive web applications using Next.js, React, and TypeScript",
   },
 ];
 
@@ -34,10 +34,10 @@ export const About = () => {
           </h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I'm an AI/ML Engineer with hands-on experience building production RAG systems using Azure AI Services and the OpenAI API. My expertise spans machine learning, deep learning, LLM applications, prompt engineering, and retrieval pipeline optimization.
+              I'm an AI/ML Engineer and Full-Stack Developer with a passion for building end-to-end intelligent solutions. My experience ranges from designing production RAG systems using Azure Cognitive Search and Azure OpenAI[cite: 2], to architecting robust backend REST APIs with Node.js, Express.js, Prisma ORM, and PostgreSQL[cite: 2].
             </p>
             <p>
-              Beyond my core focus in artificial intelligence, I am also highly skilled in full-stack web development with Next.js and TypeScript. This dual expertise allows me to bridge the gap between cutting-edge AI backend systems and responsive, user-friendly frontend interfaces, delivering complete, end-to-end intelligent solutions.
+              With a strong foundation in Python, TypeScript, and JavaScript[cite: 2], I bridge the gap between cutting-edge artificial intelligence and scalable software engineering. Whether I am building semantic search pipelines, developing complex role-based access control systems, or designing responsive Next.js interfaces[cite: 2], I thrive on crafting reliable, user-focused applications from the database to the deployment stage.
             </p>
           </div>
         </div>
